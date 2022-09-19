@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viss Records</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel ="icon" href="css/images/VRLogo.ico" type="image/x-icon">
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script>
+    $(window).scroll.function() {
+      var $window = $(window),
+      $body = $('body'),
+      $panel = $('panel');
+
+      var scroll = $window.scrollTop() + ($window.height/3);
+      $panel.each(function(){
+        var $this = $(this);
+        if($this.position().top <= $window scroll && $this.position().top + $this.height() > scroll){
+          $body.removeClass(function(index,css){
+            return css.match(/(^|\s)id -\S+/g) || []).join('');
+          });
+          $body.addClass('id-' + $this.data('id'))
+        }
+      });
+    }).script();
+  </script>
+
+  <section class="header">
+    <nav>
+      <a href="https://www.tiktok.com/@idrewviss"><img src="css/images/VRLogo.ico"></a>
+      <div class "navlinks">
+          <ul>
+            <li><a href="#first">CREW</a></li>
+            <li><a href="#second">FITNESS</a></li>
+            <li><a href="#fourth">SHOP</a></li>
+            <li><a href="#fifth">CONTACT</a></li>
+          </ul>
+      </div>
+    </nav>
+  </section>
+  <section class="code">
+    <div class="panel" id ="first">
+      <h2>THE CREW</h2>
+
+      <div class "crew">
+        <div class="headshots">
+          <div class="headshot">
+      <img src="css/images/viss.JPG" alt="" class="headshot__image">
+      <div class="headshot__content">
+        <p>I developed this site, let me know if you have any Web-Developement
+        inquries.</p>
+      </div>
+      <div class="headshot__info">
+        <div>
+          Josh Visser
+        </div>
+        <div>
+          <a href="https://www.instagram.com/idrewviss/" class="headshot__link">Instagram</a>
+        </div>
+      </div>
+    </div>
+          <div class="headshot">
+      <img src="css/images/dylan.JPG" alt="" class="headshot__image">
+      <div class="headshot__content">
+        <p>Last minute decisions and spontaneous adventures keep
+          my life interesting.</p>
+      </div>
+      <div class="headshot__info">
+        <div>
+          Dylan Principio
+        </div>
+        <div>
+          <a href="https://www.instagram.com/dylan_principio/" class="headshot__link">Instagram</a>
+        </div>
+      </div>
+    </div>
+          <div class="headshot">
+      <img src="css/images/ferg.JPG" alt="" class="headshot__image">
+      <div class="headshot__content">
+        <p>Aspiring gym rat, looking for similar mindsets to conquer the gym.</p>
+      </div>
+      <div class="headshot__info">
+        <div>
+          Chris Ferguson
+        </div>
+        <div>
+          <a href="https://www.instagram.com/chris__ferg/" class="headshot__link">Instagram</a>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" id="second">
+      <h2>FITNESS</h2>
+      <div class="muscles">
+      <div class="muscle">
+        <img src="css/images/muscleType/pecks.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Pectorals</h3>
+            <li><a href="https://www.wikihow.com/Bench-Press">Bench Press</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Push-Up">Push-Ups</a></li>
+            <li><a href="https://www.wikihow.com/Do-Dumbbell-Flys">Dumbbell Flyes</a></li>
+            <li><a href="https://www.coachmag.co.uk/chest-exercises/7020/how-to-do-the-cable-cross-over">
+              Cable Crossover</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Dumbbell-Pullover">Dumbbell Pullover</a></li>
+            <li><a href="https://www.wikihow.com/Do-Dips">Dips</a></li>
+            <li><a href="https://www.wikihow.com/Do-Dumbbell-Flys">Incline/Decline Dumbbell Fly</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/abs.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Abdominal</h3>
+            <li><a href="https://www.wikihow.com/How-Long-to-Hold-a-Plank-As-a-Beginner">Plank</a></li>
+            <li><a href="https://www.wikihow.fitness/Do-Mountain-Climbers">Mountain Climbers</a></li>
+            <li><a href="https://www.wikihow.fitness/Do-Russian-Twists">Russian Twist</a></li>
+            <li><a href="https://www.wikihow.com/Do-Reverse-Crunches">Reverse Crunches</a></li>
+            <li><a href="https://www.wikihow.com/Do-Crunches">Crunches</a></li>
+            <li><a href="https://www.wikihow.com/Do-Leg-Lifts">Leg Raises</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Hanging-Leg-Raise">Hanging Knee Raises</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/shoulders.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Shoulders</h3>
+            <li><a href="https://www.wikihow.com/Do-a-Lateral-Raise">Lateral Raises</a></li>
+            <li><a href="https://www.wikihow.com/Do-an-Overhead-Press">Overhead Press</a></li>
+            <li><a href="https://www.wikihow.fitness/Do-a-Front-Dumbbell-Raise">Front Raise</a></li>
+            <li><a href="https://www.wikihow.fitness/Do-Dumbbell-Upright-Rows">Upright Row</a></li>
+            <li><a href="https://www.wikihow.com/Dumbbell-Press">Arnold Press</a></li>
+            <li><a href="https://www.wikihow.com/Do-Dumbbell-Flys">Reverse Fly</a></li>
+            <li><a href="https://www.wikihow.com/Do-Pike-Push-Ups">Pike Push-Ups</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/biceps.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Biceps</h3>
+            <li><a href="https://www.wikihow.fitness/Do-Dumbbell-Hammer-Curls">Hammer Curls</a></li>
+            <li><a href="https://www.wikihow.com/Do-Bicep-Curls">Bicep Curls</a></li>
+            <li><a href="https://www.wikihow.com/Do-Bicep-Curls">Barbell Curls</a></li>
+            <li><a href="https://www.wikihow.com/Do-Bicep-Curls">Overhead Cable Curls</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Bent-over-Row">Bent Over Rows</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Chin-Up">Chin Ups</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Bent-over-Row">Dumbbell Rows</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/triceps.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Triceps</h3>
+            <li><a href="https://www.wikihow.com/Dumbbell-Press">Close Grip Bench Press</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Tricep-Workout">Overhead Tricep Extensions</a></li>
+            <li><a href="https://www.wikihow.com/Do-Skull-Crushers">Skull Crushers</a></li>
+            <li><a href="https://www.wikihow.com/Do-Dips">Dips</a></li>
+            <li><a href="https://www.wikihow.fitness/Do-Triceps-Kickbacks">Dumbbell Kickbacks</a></li>
+            <li><a href="https://www.wikihow.com/Do-a-Push-Up">Push Ups</a></li>
+            <li><a href="https://www.youtube.com/watch?v=2668NKYmls4">Reverse Grip Tricep Pushdowns</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/back.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Back</h3>
+          <li><a href="https://www.wikihow.com/Do-a-Bent-over-Row">Bent-Over Rows</a></li>
+          <li><a href="https://www.wikihow.com/Do-Pullups">Pull-Ups</a></li>
+          <li><a href="https://www.wikihow.com/Do-a-Deadlift">Deadlift</a></li>
+          <li><a href="https://www.wikihow.com/Do-a-Seated-Cable-Row">Seated Cable Rows</a></li>
+          <li><a href="https://www.wikihow.com/Do-Dumbbell-Flys">Reverse Fly</a></li>
+          <li><a href="https://www.wikihow.com/Do-Isometric-Rows">Inverted Row</a></li>
+          <li><a href="https://www.wikihow.fitness/Do-a-Lat-Pulldown">Close-Grip Front Lat Pulldown</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/legs.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Upper Legs</h3>
+          <li><a href="https://www.wikihow.fitness/Front-Squat">Front Squats</a></li>
+          <li><a href="https://www.wikihow.com/Perform-a-Leg-Press-Safely">Leg Press</a></li>
+          <li><a href="https://www.wikihow.com/Do-Leg-Extensions">Leg Extension</a></li>
+          <li><a href="https://www.masterclass.com/articles/goblet-squat-guide">Goblet Squats</a></li>
+          <li><a href="https://www.wikihow.com/Do-a-Deadlift">Dead Lift</a></li>
+          <li><a href="https://www.wikihow.com/Do-Box-Jumps">Box Jump</a></li>
+          <li><a href="https://www.wikihow.com/Do-Wall-Sits">Wall Sit</a></li>
+        </div>
+      </div>
+      <div class="muscle">
+        <img src="css/images/muscleType/calves.JPG" alt="area" class="muscle__image">
+        <div class="muscle__content">
+          <h3>Lower Legs</h3>
+          <li><a href="https://www.wikihow.com/Do-Calf-Raises#:~:text=Raises">Seated Calf Raises</a></li>
+          <li><a href="https://www.wikihow.com/Jump-Rope">Jump Rope</a></li>
+          <li><a href="https://www.wikihow.com/Perform-a-Leg-Press-Safely">Calf Press</a></li>
+          <li><a href="https://www.wikihow.com/Do-Calf-Raises">Dumbbell Calf Raises</a></li>
+          <li><a href="https://www.wikihow.com/Perform-Jumping-Jacks">Jumping Jacks</a></li>
+          <li><a href="https://www.wikihow.fitness/Do-Jump-Squats">Jump Squat</a></li>
+          <li><a href="https://www.youtube.com/watch?v=rJ0ouBDD7Mg">Smith Machine Calf Raise</a></li>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="panel" id="fourth">
+      <h2>COMING SOON...</h2>
+      <div class="shop_item">
+        <figure class = "item1">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 1">
+        </figure>
+        <figure class = "item2">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 2">
+        </figure>
+        <figure class = "item3">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 3">
+        </figure>
+        <figure class = "item4">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 4">
+        </figure>
+        <figure class = "item5">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 5">
+        </figure>
+        <figure class = "item6">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 6">
+        </figure>
+        <figure class = "item7">
+          <img src="css/images/VRLogo.ico">
+          <class="gallery_img" alt="image 7">
+        </figure>
+        <figure class = "item8">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 8">
+        </figure>
+        <figure class = "item9">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 9">
+        </figure>
+        <figure class = "item10">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 10">
+        </figure>
+        <figure class = "item11">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 11">
+        </figure>
+        <figure class = "item12">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 12">
+        </figure>
+        <figure class = "item13">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 13">
+        </figure>
+        <figure class = "item14">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 14">
+        </figure>
+        <figure class = "item15">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 15">
+        </figure>
+        <figure class = "item16">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 16">
+        </figure>
+        <figure class = "item17">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 17">
+        </figure>
+        <figure class = "item18">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 18">
+        </figure>
+        <figure class = "item19">
+          <img src="css/images/VRLogo.ico">
+          <class="gallery_img" alt="image 19">
+        </figure>
+        <figure class = "item20">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 20">
+        </figure>
+        <figure class = "item21">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 21">
+        </figure>
+        <figure class = "item22">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 22">
+        </figure>
+        <figure class = "item23">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 23">
+        </figure>
+        <figure class = "item24">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 24">
+        </figure>
+        <figure class = "item25">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 25">
+        </figure>
+        <figure class = "item26">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 26">
+        </figure>
+        <figure class = "item27">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 27">
+        </figure>
+        <figure class = "item28">
+          <img src="css/images/VRLogo.ico"
+          class="gallery_img" alt="image 28">
+        </figure>
+      </div>
+    </div>
+    <div class="panel" id ="fifth">
+      <h4>Viss Records</h4>
+      <h4>viss@vissrecords.com</h4>
+    </div>
+
+  </section>
+</body>
+</html>
